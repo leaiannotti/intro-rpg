@@ -7,11 +7,6 @@ class GameScene extends Phaser.Scene{
         this.scene.launch('UI');
         this.score = 0;
     }
-
-    preload(){
-
-    }
-
     create(){
         this.createAudio();
         this.createChest();
@@ -43,7 +38,6 @@ class GameScene extends Phaser.Scene{
         for (let i = 0; i < this.maxNumberOfChests; i++){
             this.spawnChest();
         }
-        
     }
 
     spawnChest(){
